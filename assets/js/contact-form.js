@@ -34,7 +34,7 @@ jQuery(document).ready(function ($) {
 				success : function (e) {
 					var t = jQuery.parseJSON(e);
 					jQuery('#submit').html(tempValue);
-					if (t.status = "Success") {
+					if (t.status == "Success") {
 						jQuery("#form_result").html('<span class="form-success">' + t.msg + "</span>")
 					} else {
 						jQuery("#form_result").html('<span class="form-error">' + t.msg + "</span>")
